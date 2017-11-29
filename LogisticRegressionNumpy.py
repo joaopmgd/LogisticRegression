@@ -130,9 +130,9 @@ def plot_predicted_data(X, y, W, b):
             z[i,j] = np.dot(W.T, map_feature(u[i], v[j], 1)) + b
     z = z.T
     plt.contour(u, v, z, 0)
-    plt.title('Student Grades')
-    plt.xlabel('Exam 1 Score')
-    plt.ylabel('Exam 2 Score')
+    plt.title('Microchip Evaluation')
+    plt.xlabel('Microchip Test 1')
+    plt.ylabel('Microchip Test 2')
     plt.legend(handles=[accepted, not_accepted], loc = 3)
     plt.draw()
     plt.pause(0.00001)
